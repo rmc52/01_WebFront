@@ -28,3 +28,5 @@ function print1(num, str) { // 함수선언
     // 함수 정의
     console.log(`${num} 은/는 ${str} 입니다`);
 };
+
+console.log(2)
