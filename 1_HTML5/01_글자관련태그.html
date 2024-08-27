@@ -1,135 +1,169 @@
 <!DOCTYPE html>
-<!-- html용 주석
-여기는 다 주석
-주석 : 컴퓨터가 해석하지 않음(실행x) 
+<!-- html용 주석 
+여기는 다 주석 
+주석 : 컴퓨터가 해석하지 않음(실행 X)
 -->
-<!-- !DOCTYPE(Document Type) : 문서형식을 지정하는 태그 -->
- 
+<!-- !DOCTYPE(Document Type) : 문서 형식을 지정하는 태그 -->
+
 <html lang="ko">
-    <!-- html태그 : html 문서를 정의하는 태그
-     이 안에 html 코드를 작성해라! 라는 의미.
+<!-- html 태그 : html 문서를 정의하는 태그 
+    이 안에 html 코드를 작성해라! 라는 의미.
+
     lang 속성 : html 문서가 어떤 언어로 되어있는지 표시, 검색 엔진이 참고하는 용도
 -->
     <head>
-        <!-- head 태그 : html문서를 정의하는 태그
-        문서의 제목, 스타일시트(css), 스크립트(JS), 메타데이터(문서정보) 
+        <!-- head 태그 : html 문서를 정의하는 태그 
+            문서의 제목, 스타일시트(CSS), 스크립트(JS), 메타데이터(문서 정보) 
         -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>01_글자관련태그</title>
     </head>
+
     <body>
-        <!-- 바디태그 : 화면에 보여질 HTML문서 내용을 작성하는 태그-->
-         안녕하세요
-         <!-- H1 ~ H6 (heading tag) - 제목을 입력하는 태그 (타이틀제목보다 하위
-          1~6까지 6단계 폰트 크기가 지정되어 있음. 폰트크기 :  중요도)-->
-        <h1>html입니다</h1>
-        <h2>23423</h2>
-        <h3>4324234</h3>
-        <h6>2343242</h6>
+        <!-- body 태그 : 화면에 보여질 html 문서 내용을 
+            작성하는 태그-->
+
+        안녕하세요
+
+        <!-- h1 ~ h6 (Heading Tag) 
+            - 제목을 입력할 때 사용하는 태그 
+            - 1 ~ 6 까지 6단계 폰트 크기가 지정되어 있음.
+        -->
+
+        <h1>HTML 입니다.</h1>
+        <h2>HTML 입니다.</h2>
+        <h3>HTML 입니다.</h3>
+        <h4>HTML 입니다.</h4>
+        <h5>HTML 입니다.</h5>
+        <h6>HTML 입니다.</h6>
 
         <hr>
-        <!-- hr(horizon : 수평선태그)-->
-         <h3>html 문서에서 연속으로 띄어쓰기, 엔터 입력시 발생하는 문제점
+        <!-- hr (horizon : 수평선) tag-->
 
-         </h3>
+        <h3>HTML 문서에서 연속으로 띄어쓰기, 엔터 입력 시
+           발생하는 문제점
+        </h3>
 
-         가                                 나
+        가                               나
 
-         다           라         
-         <!-- html은 연속되는 띄어쓰기는 1칸띄어쓰기로 인식. 엔터는 인식x-->
+        다  라     마       바
 
-         <h3 style="color: red">* 띄어쓰기, 엔터를 html에 표시하는 방법</h3>
-        <!-- &nbsp;-->
-         1. 띄어쓰기 : 가&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;나
-         <!-- br(line break) tag-->
-          <br>
+        <!-- HTML은 연속되는 띄어쓰기는 1칸 띄어쓰기로 인식
+            엔터는 인식되지 않는다. 
+        -->
 
-          다<br>
-          2.줄바꿈
-          <br>ㄹ<br>ㅁ<br>ㅁ
-<hr>
+        <h3 style="color: red">* 띄어쓰기, 엔터를 html에 표시하는 방법</h3>
+        <!--  &nbsp;  -->
+        1. 띄어쓰기 : 가&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;나
 
-<h3> p,pre 태그</h3>
-<!-- p태그 : 문단, 단락
- -글작성을 태그
- -문단을 구분(앞, 뒤태그와의 간격이 생김)-->
-1번입니다. <br>
-2번입니다. <br>
-3번입니다. <br>
-<p>1번 입니다.</p>
-<p>2번 입니다.</p>
-<p>3번 입니다.</p>
-<p>
-    1번입니다<br>
-    2번입니다<br>
-    3번입니다<br>
-</p>
-<!-- pre태그
- -글작성을태그
- -문단을구분 
- + 시작, 종료 태그 사이에 작성된 문자열의 형식을그대로 화면에 표현(출력)
- -->
- <pre>
-    1번입니다.          가
-2번입니다. 
-    3번입니다.
- </pre>
-<hr>
+        <!-- br(line BReak) tag -->
+        <br>
 
-<p>
-    <b>b 태그</b> : 단순히 글자를 굵게 표시하는 태그<br>
-    <i>i 태그</i> : 단순히 글자를 기울이는 태그 <br>
+        다
+        <br>
+        2. 줄바꿈
+        <br>라<br>마<br>바
 
-    <b>
-        이전
-        <i>abc(태그는중복적용이 가능하다)</i>
-        이후
-    </b>
+        <hr>
 
-    <br><br>
+        <h3>p, pre 태그</h3>
+        <!-- 
+            p 태그 : 문단, 단락
+            - 글 작성용 태그
+            - 문단을 구분 (앞, 뒤 태그와의 간격이 생김)
+        -->
 
-    <strong>strong 태그</strong> : 중요성, 심각함 등을 표현하는 강조 태그
-    <br>
-    <em>em태그 </em> : 문장 일부분의 중요성을 강조할때 사용
-    <!-- b, i와 strongm em의 차이
-     *웹 접근성의 차이*
-     스트롱, em은 장애인,고령자를위해 웹사이트에서 제공하는 서비스를 모두 이용할 수 있도록 보장
-     (의무사항. 읽어줄때 strong 등은 강조해서읽음)
+        1번 입니다. <br>
+        2번 입니다. <br>
+        3번 입니다.
 
-     -->
-</p>
-<p>
-    <mark>mark 태그</mark> : 형광펜 효과를 나타내는 태그<br>
-    <u>u 태그</u> : under line(밑줄)을 나타내는 태그<br>
-    <s>s 태그</s> : 취소선(잘못됨을 표시) <br>
-    <small>small 태그</small> : 작은 글자 표시<br>
+        <p>1번 입니다.</p>
+        <p>2번 입니다.</p>
+        <p>3번 입니다.</p>
 
-    sup태그(윗첨자) : x<sup>2</sup>
-    <br>
-    sub태그(아랫첨자) : log<sub>10</sub>
-    <br>
+        <p>
+            1번입니다. <br>
+            2번입니다. <br>
+            3번입니다.
+        </p>
 
-    abbr 태그 : 마우스 오버시 툴팁 출력 <br>
-    <abbr title="hyper text transfer protocol">HTTP</abbr>
-</p>
-<p>
-    <mark>태그</mark>들은 해당 태그 내에서 중첩으로 사용 가능하다.<br> <strong>굵은</strong> 글자를 사용할 수도 있고, <em>기울</em>이거나 <s>취소선</s>을 넣는 등<br>
-다양하게 사용할 수 있다.
+        <!-- pre 태그 
+            - 글 작성용 태그
+            - 문단을 구분
+            + 시작, 종료 태그 사이에 작성된 문자열의 형식을
+            그대로 화면에 표현(출력)
+        -->
+
+        <pre>
+1번입니다.           가
+2번입니다.
+3번입니다.
+        </pre>
+
+        <pre>
+1번입니다.           가
+2번입니다.
+3번입니다.
+        </pre>
+
+        <hr>
+
+        <p>
+            <b>b 태그</b> : 단순히 글자를 굵게 표시하는 태그 <br>
+            <i>i 태그</i> : 단순히 글자를 기울이는 태그 <br>
+
+            <b>
+                이전
+                <i>ABC(태그는 중복 적용이 가능하다)</i>
+                이후
+            </b>
+
+            <br><br>
+
+            <strong>strong 태그</strong> : 중요성, 심각함 등을 표현하는 강조 태그
+            <br>
+            <em>em 태그</em> : 문장 일부분의 중요성을 강조할 때 사용
+
+            <!--
+                b, i와 strong, em 의 차이
+                * 웹 접근성 *
+                일반인 뿐만 아니라 장애인, 고령자를 위해
+                웹 사이트에서 제공하는 서비스를
+                모두 이용할 수 있도록 보장하는 것(의무 사항)
+            -->
+        </p>
+
+        <p>
+            <mark>mark 태그</mark> : 형광펜 효과를 나타내는 태그 <br>
+            <u>u 태그</u> : under line(밑줄)을 나타내는 태그 <br>
+            <s>s 태그</s> : 취소선(잘못됨을 표시) <br>
+            <small>small 태그</small> : 작은 글자 표시 <br>
+
+            sup 태그(윗첨자) : x<sup>2</sup>
+            <br>
+            sub 태그(아랫첨자) : log<sub>10</sub>
+            <br>
+
+            abbr 태그 : 마우스 오버 시 툴팁 출력 <br>
+
+            <abbr title="Hyper Text Transfer Protocol">HTTP</abbr>
+        </p>
+
+        <hr>
+
+        <p>
+            <mark>태그</mark>들은 해당 태그 내에서 중첩으로 사용 가능하다.<br>
+            <strong>굵은</strong>글자를 사용할 수도 있고,
+            <em>기울이거나</em>
+            <s>취소선</s>을 넣는 등<br>
+            다양하게 사용할 수 있다.
+        </p>
 
 
-</p>
 
 
-<h2>iframe 태그</h2>
-<p>
-    웹 문서 내부에 다른 웹문서를 추가하는 태그
-    iframe 태그 == inline 형식이지만 크기 지정 가능
-</p>
-
-<iframe src="05_표연습문제.html" width="800px" height="1000px"></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Z64pjmgHg4I?si=R_lpqDI7zjrqWw6H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
+        <div style="height: 500px;"></div>
     </body>
+
 </html>
